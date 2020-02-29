@@ -6,4 +6,4 @@ from submissions.models import Submission
 class SubmissionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Submission
-        fields = ['topic', 'text', 'patient']
+        fields = ['id', 'topic', 'text', 'patient']

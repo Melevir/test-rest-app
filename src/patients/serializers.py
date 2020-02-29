@@ -7,10 +7,10 @@ from patients.models import Patient
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['email']
+        fields = ['id', 'email']
 
 
 class PatientSerializer(serializers.ModelSerializer):
     class Meta:
         model = Patient
-        fields = ['first_name', 'last_name', 'birth_date', 'age', 'user']
+        fields = ['id', 'first_name', 'last_name', 'birth_date', 'age', 'user']
